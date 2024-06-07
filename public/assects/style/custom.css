@@ -1,0 +1,52 @@
+.container {
+  background: #292828;
+  margin: auto;
+  width: 80%;
+  height: 70vh;
+  border: 1px solid seagreen;
+  padding: 50px;
+  margin-top: 50px;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 360px;
+  height: 200px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #14ffea, #ffeb3b, #ff00e0);
+  animation: animate 1.5s linear infinite;
+}
+.wrapper .watch-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: rgba(34, 32, 32, 0.938);
+  border-radius: 6px;
+  height: 185px;
+  width: 345px;
+  text-align: center;
+}
+.wrapper .watch-display #watch-time {
+  position: relative;
+  background: linear-gradient(135deg, #14ffea, #ffeb3b, #ff00e0);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper .watch-display #watch-date {
+  position: relative;
+  background: linear-gradient(135deg, #14ffea, #ffeb3b, #ff00e0);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
